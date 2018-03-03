@@ -1,17 +1,17 @@
 test_search:
-  test001:
-    name: 傻逼
-    phone: 110
-    expect: 傻逼
-  test002:
-    name: 大傻逼
-    phone: ""
-    expect: 大傻逼
+#  test001:
+#    name: 傻逼
+#    phone: 110
+#    expect: 傻逼
+#  test002:
+#    name: 大傻逼
+#    phone: ""
+#    expect: 大傻逼
   test003:
     name: ""
     phone: 119
-    expect: '119'
-  test004:
-    name: ""
-    phone: ""
-    expect: 所有联系人
+    expect: 'xhy'
+#  test004:
+#    name: ""
+#    phone: ""
+#    expect: 所有联系人

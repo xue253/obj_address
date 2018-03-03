@@ -1,4 +1,4 @@
-import time,sys,os,pytest
+import time,sys,os,pytest,allure
 # sys.path.append(os.path.dirname(r'C:\Users\XHY\PycharmProjects\PO_object\base'))
 # sys.path.append(os.path.dirname(r'C:\Users\XHY\PycharmProjects\PO_object\page'))
 sys.path.append(os.getcwd())
@@ -51,6 +51,7 @@ class Test_address(object):
 
     @pytest.mark.usefixtures("start_address")
     @pytest.mark.parametrize("test_no,name,phone,expect",read_test_data())
+    @allure.step(title="添加联系人测试")
     def test_003(self,test_no,name,phone,expect):
         print(test_no,name,phone,expect)
         self.page.send_message(name, phone)
@@ -60,9 +61,10 @@ class Test_address(object):
             pass
         else:
             self.page.out_keyevent()
-        time.sleep(1)
+        time.sleep(0.1)
         text_list=self.driver.page_source
-        assert expect in text_list
+        assert expect in text_list,self.page.save_screen()
+
 
 
 
