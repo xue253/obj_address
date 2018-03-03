@@ -8,3 +8,6 @@ test_search:
   test003:
     text: WLAN
     expect: WLAN
+    test004:
+    text: C
+    expect: C
