@@ -1,0 +1,10 @@
+test_search:
+  test001:
+    text: 123
+    expect: '123'
+  test002:
+    text: 中文
+    expect: 中文
+  test003:
+    text: WLAN
+    expect: WLAN
