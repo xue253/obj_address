@@ -10,7 +10,7 @@ test_search:
   test003:
     name: ""
     phone: 119
-    expect: 'xhy'
+    expect: '119'
 #  test004:
 #    name: ""
 #    phone: ""

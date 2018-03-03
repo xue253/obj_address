@@ -1,5 +1,7 @@
 {
-  "script/test_address.py::Test_address::()": true,
+  "script/test_address.py::Test_address::()::test_001[\\u65b0\\u589e\\u8054\\u7cfb\\u4eba]": true,
+  "script/test_address.py::Test_address::()::test_002[\\u6240\\u6709\\u8054\\u7cfb\\u4eba]": true,
+  "script/test_address.py::Test_address::()::test_003[test003--119-119]": true,
   "script/test_address.py::Test_address::()::test_003[test003--119-xhy]": true,
   "script/test_search.py::Test_search::()::test_001[test001-123-123]": true
 }
